@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "About Me";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<style>
+    body {
+        background-color: crimson;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .about-container {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #0dcaf0;
+        box-shadow: 0 0 15px rgba(13, 202, 240, 0.5);
+        animation: zoomIn 1s ease;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        color: #0dcaf0;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p.lead {
+        font-size: 1.1rem;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+    }
+
+    .skills {
+        margin-top: 30px;
+    }
+
+    .skill-badge {
+        display: inline-block;
+        background-color: #0dcaf0;
+        color: #000;
+        padding: 10px 20px;
+        border-radius: 30px;
+        margin: 5px;
+        font-weight: 500;
+        box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+        .skill-badge:hover {
+            transform: scale(1.05);
+            background-color: #0ba5c1;
+        }
+
+    .contact-box {
+        margin-top: 40px;
+        font-size: 1rem;
+        color: #bbb;
+    }
+
+        .contact-box a {
+            color: #0dcaf0;
+            text-decoration: none;
+        }
+
+    @@keyframes zoomIn {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+
+<div class="about-container">
+    <img src="~/images/Hari.jpg" alt="Hariharan C" class="profile-img" />
+
+    <h2>Hariharan C</h2>
+    <p class="lead">
+        I’m a passionate <strong>Full Stack Developer</strong> specializing in .NET and Web Technologies. I love building clean, functional applications and continuously learning modern tools and frameworks.
+    </p>
+
+    <div class="skills">
+        <h4 class="text-info mb-3"> Technical Skills</h4>
+        <span class="skill-badge">ASP.NET Core</span>
+        <span class="skill-badge">C#</span>
+        <span class="skill-badge">Entity Framework</span>
+        <span class="skill-badge">SQL Server</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">HTML/CSS</span>
+        <span class="skill-badge">Bootstrap</span>
+        <span class="skill-badge">Web API</span>
+    </div>
+    <div class="link-info">
+        <h5 class="mt-5">Links</h5>
+         <p>GitHub: <a href="https://github.com/HARIHARAN-SOURCE-CODE" target="_blank">github.com/HARIHARAN C</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/hariharan300/">linkedin.com/hariharanc</a></p>
+    </div>
+    <div class="contact-box">
+        <h5 class="mt-5"> Contact Me</h5>
+        <p>Email: <a href="mailto:hari19bcs068@gmail.com">hari19bcs068@gmail.com</a></p>
+        <p>Phone:+91 8778866319</p>
+        <p>WhatsApp:+91 8778866319</p>
+        
+    </div>
+    <a href="/Home/Index" class="btn btn-primary">GO BACK</a>
+</div>
